@@ -1,21 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+/*-----Gloval-----*/
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    padding: 50px 80px;
 }
 
 header {
     background: rgba(255, 144, 14, 0.10);
 }
 
-.container {
-    padding: 50px 100px;
+.description {
+    max-width: 899px;
+    color: #727272;
+    line-height: 26px;
+    /* 162.5% */
+    font-size: 1rem;
 }
+
+.btn-primary {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    font-size: 1.25rem;
+    color: #fff;
+    margin: 15px 0;
+}
+
+/*-----Gloval-----*/
 
 nav {
     display: flex;
@@ -61,19 +82,103 @@ nav li a {
     margin: auto;
 }
 
-.banner-description {
-    max-width: 899px;
-    color: #727272;
-    line-height: 26px; /* 162.5% */
-    font-size: 1rem;
+.team-container {
+    display: flex;
+    align-items: center;
 }
 
-.btn-primary {
-    padding: 20px 25px;
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.team-content {
+    padding-left: 45px;
+}
+
+.team-title {
+    font-size: 2.813rem;
+}
+
+.Quick {
+    color: #727272;
+    font-weight: 500;
+}
+
+.of {
+    color: #131313;
+    font-weight: 700;
+}
+
+.feature {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.features {
+    /* display: flex; */
+    /* gap: 50px; */
+    padding: 50px 0;
+}
+
+.features-title {
+    max-width: 400px;
+    color: #131313;
+    font-size: 2.813rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+
+.card {
+    max-width: 472px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.exp {
     border-radius: 8px;
     background: #FF900E;
-    border: none;
-    font-size: 1.25rem;
-    color: #fff;
-    margin: 15px 0;
+    color: #FFF;
+    width: 183px;
+    padding: 47px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.features-content {
+    float: left;
+    max-width: 512px;
+}
+
+.features-image {
+    float: right;
+}
+
+.features-image img {
+    height: 818px;
+    margin-left: 60px;
+}
+
+.exp h2 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4.375rem; /* 107.692% */
+}
+
+.exp p {
+    font-size: 1.563rem;
+    font-weight: 500;
+    line-height: 2.5rem;
 }
